@@ -1,0 +1,97 @@
+{
+    "TOOL_VERSION": 2.0,
+    "emme_proj_path": "",
+    "helmet_zones_geojson_path": "input/SIJ2023_aluejako.geojson",
+    "emme_scen_id": 1,
+    "gtfs_hsl_agency_id": 1229832131,
+    "gtfs_folder_path": "input/GTFS",
+    "gtfs_import_date": "20231115",
+    "gtfs_start_time": "04:00",
+    "gtfs_end_time": "16:00",
+    "vehicle_ids": {
+        "d": 1,
+        "e": 2
+    },
+    "period_headways": [
+        {
+            "hdw": "@hw_aht",
+            "start_time": "04:00",
+            "end_time": "07:00"
+        },
+        {
+            "hdw": "@hw_pt",
+            "start_time": "07:00",
+            "end_time": "13:00"
+        },
+        {
+            "hdw": "@hw_iht",
+            "start_time": "13:00",
+            "end_time": "16:00"
+        }
+    ],
+    "mapmatching_criteria": {
+        "simplify_tolerance": 0.1,
+        "max_number_of_paths": 10,
+        "max_number_of_points": 10,
+        "primary_radius": 0.7,
+        "outlier_radius": 0.5,
+        "distance_factor": 1,
+        "drift_factor": 1.5,
+        "ends_drift_factor": 15,
+        "shortest_path_attribute": "@time_freeflow_car"
+    },
+    "use_shapes": false,
+    "stop_variance": 8,
+    "headway_calc_type": "DEPARTURES_STUDY_PERIOD",
+    "gtfs_attributes": {
+        "network_field_attributes": {
+            "route_name" : {
+                "field_name": "route_name",
+                "field_type": "TRANSIT_LINE",
+                "field_description": ""
+            },
+            "trip_id": {
+                "field_name": "trip_id",
+                "field_type": "TRANSIT_LINE",
+                "field_description": ""
+            },
+            "stop_name": {
+                "field_name": "stop_name",
+                "field_type": "TRANSIT_SEGMENT",
+                "field_description": ""
+            },
+            "agency_name": {
+                "field_name": "agency_name",
+                "field_type": "TRANSIT_LINE",
+                "field_description": ""
+            },
+            "trip_headsign": {
+                "field_name": "trip_headsign",
+                "field_type": "TRANSIT_LINE",
+                "field_description": ""
+            }
+        },
+        "create_extra": false,
+        "extra_attributes": {
+            "direction_id": {
+                "field_name": "direction_id",
+                "field_type": "TRANSIT_LINE",
+                "field_description": ""
+            },
+            "line_offset": {
+                "field_name": "line_first_dep",
+                "field_type": "TRANSIT_LINE",
+                "field_description": ""
+            }
+        }
+    },
+    "stop_distance": 10,
+    "muni_col_name": "KUNTANIMI",
+    "muni_short_codes": {
+        "Inkoo": "U", "Lahti": "L", "Hollola": "L", "Orimattila": "L", 
+        "Riihimäki": "R", "Loppi": "R", "Hyvinkää": "Y",
+        "Hämeenlinna": "H", "Salo": "S", "Porvoo": "P",
+        "Janakkala": "H", "Karkkila": "U",
+        "Lohja": "U", "Mäntsälä": "M", "Raasepori": "B", "Vihti": "U"
+    }
+}
